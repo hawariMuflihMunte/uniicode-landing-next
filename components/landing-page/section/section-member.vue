@@ -11,7 +11,7 @@
         230+
       </p>
     </section>
-    <section class="flex flex-col gap-3 w-full mt-32">
+    <section class="flex flex-col gap-3 w-full mt-32"><!-- Section Column -->
       <section class="flex flex-nowrap overflow-x-auto scrollbar-hide gap-3">
         <section
           class="uc-card bg-transparent h-max w-max min-w-[280px] max-w-[380px] flex flex-col place-content-center m-2 overflow-clip flex-shrink-0"
@@ -32,7 +32,7 @@
           </section>
           <img src="/images/uc-card-divider.svg" alt="Divider" class="block w-full  h-auto px-4" />
         </section>
-      </section><!-- Section Flex Row -->
+      </section><!-- Section Row -->
       <section class="flex flex-nowrap overflow-x-auto scrollbar-hide gap-3">
         <section
           class="uc-card bg-transparent h-max w-max min-w-[280px] max-w-[380px] flex flex-col place-content-center m-2 overflow-clip flex-shrink-0"
@@ -53,8 +53,8 @@
           </section>
           <img src="/images/uc-card-divider.svg" alt="Divider" class="block w-full  h-auto px-4" />
         </section>
-      </section><!-- Section Flex Row -->
-    </section><!-- Section Flex Column -->
+      </section><!-- Section Row -->
+    </section><!-- Section Column -->
   </section>
 </template>
 
@@ -119,13 +119,7 @@ const membersFragment2: Member[] = [
 
 <style scoped>
 .uc-card {
-  background: radial-gradient(circle at 100% 100%, rgba(0,0,0,1) 0, rgba(0,0,0,1) 18px, transparent 18px) 0% 0%/20px 20px no-repeat,
-            radial-gradient(circle at 0 100%, rgba(0,0,0,1) 0, rgba(0,0,0,1) 18px, transparent 18px) 100% 0%/20px 20px no-repeat,
-            radial-gradient(circle at 100% 0, rgba(0,0,0,1) 0, rgba(0,0,0,1) 18px, transparent 18px) 0% 100%/20px 20px no-repeat,
-            radial-gradient(circle at 0 0, rgba(0,0,0,1) 0, rgba(0,0,0,1) 18px, transparent 18px) 100% 100%/20px 20px no-repeat,
-            linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)) 50% 50%/calc(100% - 4px) calc(100% - 40px) no-repeat,
-            linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)) 50% 50%/calc(100% - 40px) calc(100% - 4px) no-repeat,
-            linear-gradient(222deg, #ccff00 0%, #000000 100%);
+  border: 2px solid rgba(204, 255, 0, 1);
   border-radius: 20px;
   padding: 32px;
   box-sizing: content-box;
